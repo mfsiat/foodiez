@@ -17,4 +17,6 @@ We can search for food recipe's of various items. There is a search bar where we
 - We are using **functional component** here.
 - Declare API key on app.js.
 - [Click Here](https://developer.edamam.com/edamam-docs-recipe-api) to read the EDAMAM api documentation.
-- Declare the **GET** request. 
+- Declare the **GET** request as exampleReq.
+- To make a request we are using **useEffect**. **useEffect** is a function which will run everytime our page renders. 
+
