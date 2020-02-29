@@ -9,6 +9,9 @@ const App = () => {
   // calling a state to save the data which are coming from the api
   const [recipes, setRecipes] = useState([]);
 
+  // for the search function 
+  const [search, setSearch] = useState("");
+
   useEffect(() => {
     getRecipes();
   }, []);
@@ -32,16 +35,26 @@ const App = () => {
     console.log(data.hits);
   };
 
+  // const updateSearch = e => {
+    
+  // }
+
   return (
     <div className="App">
       <form className="search-form">
-        <input className="search-bar" type="text" />
+        <input 
+          className="search-bar" 
+          type="text" 
+          value={search} 
+          onChange={}
+        />
         <button className="search-button" type="submit">
           Search
         </button>
       </form>
       {recipes.map(recipe => (
         <Recipe 
+          key={recipe.recipe.label} // there needs to be an unique key 
           title={recipe.recipe.label} 
           calories={recipe.recipe.calories} 
           image={recipe.recipe.image}
