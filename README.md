@@ -21,3 +21,19 @@ We can search for food recipe's of various items. There is a search bar where we
 - We are using async on the useEffect. 
 - **Make sure to use _await_ everytime we use promise**.
 
+    ### Recipe.js
+
+    - API and other credentials are on the app.js so we are fetching data on app.js.
+
+    - The fetched data is being saved by useState and on different arrays. 
+
+    - Then we are using props to send them to the recipe component. 
+
+    - Recipe contains the basic view for our app. 
+
+    ### Styles
+
+    - For styling we are using a gradient from [webgradients.com](https://webgradients.com/)
+
+    - Here we are using a **css module**. _It's a way to encapsulate our css into a component_. 
+
